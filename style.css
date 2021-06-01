@@ -20,8 +20,8 @@ html {
   width: 30px;
   height: 37px;
   background: url("assets/logo.png");
-  top: 3px;
-  right: 3px;
+  top: 13px;
+  right: 6px;
   z-index: 4;
 }
 [class^="pp_box__"] {
@@ -42,7 +42,7 @@ html {
   height: 32px;
   width: 77px;
   background: url("assets/water\ logo.png");
-  top: 23px;
+  top: 13px;
   left: 10px;
 }
 .pp_box_models {
@@ -59,7 +59,7 @@ html {
   height: 154px;
   width: 108px;
   background: url("assets/text2.png");
-  top: 10px;
+  top: 13px;
   left: 10px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   animation: bounceIn 1.55s linear infinite;
@@ -70,15 +70,9 @@ html {
   width: 178px;
   background: url("assets/sakib.png");
   top: 35px;
-  right: 5px;
+  right: 10px;
 }
-/* .pp_box_text_2 {
-  height: 58px;
-  width: 195px;
-  background: url("https://ms.purplepatch.online/slideanim/emami/fr-10-25/02/copy.png");
-  top: 30px;
-  left: 54px;
-} */
+
 .fadeInZoom {
   animation-delay: 1s;
   animation: fadeInZoom 1;
@@ -188,4 +182,12 @@ html {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+@keyframes makeUpDown {
+    0%,100%{
+        transform: translateY(150px);
+    }
+    10%,90%{
+        transform: translateY(0px);
+    }
 }
