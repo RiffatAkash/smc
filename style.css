@@ -31,9 +31,18 @@ html {
   top: 0px;
   left: 0px;
   z-index: 3;
+  animation: slide 20s linear infinite;
+}
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -600px 0;
+  }
 }
 .pp_box__2 {
-  background: url("assets/bg.jpg");
+  /* background: url("assets/bg.jpg"); */
   left: 0px;
   opacity: 0;
   z-index: 2;
