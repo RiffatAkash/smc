@@ -42,7 +42,6 @@ html {
   }
 }
 .pp_box__2 {
-  /* background: url("assets/bg.jpg"); */
   left: 0px;
   opacity: 0;
   z-index: 2;
@@ -62,6 +61,7 @@ html {
   left: 0px;
   right: 0px;
   margin: 0 auto;
+  
 }
 
 .pp_box_cta {
@@ -80,6 +80,19 @@ html {
   background: url("assets/sakib.png");
   top: 35px;
   right: 10px;
+  /* -webkit-animation: makeUpDown 6s infinite 1s; */
+  animation: makeUpDown 5s both infinite 0s;
+  opacity: 0;
+}
+@keyframes makeUpDown {
+  0%{
+    transform: translateY(200px) translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 1;
+  }
 }
 
 .fadeInZoom {
@@ -192,11 +205,14 @@ html {
     transform: scale3d(1, 1, 1);
   }
 }
-@keyframes makeUpDown {
-    0%,100%{
-        transform: translateY(150px);
-    }
-    10%,90%{
-        transform: translateY(0px);
-    }
+@keyframes showZoomIn {
+  from {transform: scale3d(1, 1, 1)}
+  to {transform: scale3d(.5, .5, .5)}
+}
+.showZoomIn {
+  animation-name: showZoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 4.5s;
+  animation-iteration-count: infinite;
 }
