@@ -87,7 +87,11 @@ html {
 @keyframes makeUpDown {
   0%{
     transform: translateY(200px) translateX(150px);
-    opacity: 0;
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(0px) translateX(0px);
+    opacity: 1;
   }
   100% {
     transform: translateY(0px) translateX(0px);
